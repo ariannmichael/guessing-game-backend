@@ -13,7 +13,7 @@ public class Game implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
+	private Integer id;
 	private String playerName;
 	private int plays;
 	private int guesses;
@@ -21,7 +21,7 @@ public class Game implements Serializable{
 	
 	public Game() {}
 
-	public Game(long id, String playerName, int plays, int guesses, String duration) {
+	public Game(Integer id, String playerName, int plays, int guesses, String duration) {
 		super();
 		this.id = id;
 		this.playerName = playerName;
